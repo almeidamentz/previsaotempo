@@ -1,39 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        select {
+            font-size: 18px;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        .previsao {
+            margin-top: 20px;
+        }
+        .dia {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        img {
+            max-width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
 
-    <html>
-    <head>
-        <title>Previsão do Tempo</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f9;
-                color: #333;
-                text-align: center;
-            }
-            .cidade {
-                margin-top: 20px;
-                padding: 10px;
-                background-color: #fff;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-            .previsao {
-                display: inline-block;
-                margin: 20px;
-                text-align: left;
-                background-color: #fff;
-                border-radius: 10px;
-                padding: 15px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-            h2 {
-                color: #4CAF50;
-            }
-            img {
-                max-width: 50px;
-                height: auto;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Previsão do Tempo para a Próxima Semana</h1>
-    <div class='cidade'><h2>Várzea Grande</h2><div class='previsao'><p><img src='https://cdn.weatherapi.com/weather/64x64/day/116.png' alt='icon' /> 31/03/2025: 20.4°C - 34.9°C | Parcialmente nublado</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 01/04/2025: 21.5°C - 36.4°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/113.png' alt='icon' /> 02/04/2025: 18.8°C - 36.3°C | Sol</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/116.png' alt='icon' /> 03/04/2025: 19.8°C - 36.4°C | Parcialmente nublado</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/113.png' alt='icon' /> 04/04/2025: 19.8°C - 36.4°C | Sol</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 05/04/2025: 20.5°C - 37.1°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 06/04/2025: 23.1°C - 33.5°C | Possibilidade de chuva irregular</p></div></div><div class='cidade'><h2>Cuiabá</h2><div class='previsao'><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 31/03/2025: 26.7°C - 28.1°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 01/04/2025: 26.8°C - 28.4°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 02/04/2025: 26.7°C - 28.0°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 03/04/2025: 26.3°C - 28.1°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 04/04/2025: 26.5°C - 28.5°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 05/04/2025: 26.4°C - 28.8°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 06/04/2025: 26.4°C - 28.0°C | Chuva moderada</p></div></div><div class='cidade'><h2>Goiás</h2><div class='previsao'><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 31/03/2025: 26.7°C - 28.1°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 01/04/2025: 26.8°C - 28.4°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 02/04/2025: 26.7°C - 28.0°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 03/04/2025: 26.3°C - 28.1°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 04/04/2025: 26.5°C - 28.5°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 05/04/2025: 26.4°C - 28.8°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 06/04/2025: 26.4°C - 28.0°C | Chuva moderada</p></div></div><div class='cidade'><h2>São Paulo</h2><div class='previsao'><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 31/03/2025: 19.1°C - 30.8°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 01/04/2025: 20.6°C - 30.3°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 02/04/2025: 20.0°C - 31.6°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 03/04/2025: 21.0°C - 29.5°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 04/04/2025: 18.6°C - 24.4°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 05/04/2025: 15.2°C - 16.3°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 06/04/2025: 13.9°C - 22.0°C | Possibilidade de chuva irregular</p></div></div><div class='cidade'><h2>Paraná</h2><div class='previsao'><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 31/03/2025: 26.7°C - 28.1°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 01/04/2025: 26.8°C - 28.4°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 02/04/2025: 26.7°C - 28.0°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 03/04/2025: 26.3°C - 28.1°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 04/04/2025: 26.5°C - 28.5°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 05/04/2025: 26.4°C - 28.8°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 06/04/2025: 26.4°C - 28.0°C | Chuva moderada</p></div></div><div class='cidade'><h2>Rio de Janeiro</h2><div class='previsao'><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 31/03/2025: 23.7°C - 30.1°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 01/04/2025: 23.7°C - 31.2°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/113.png' alt='icon' /> 02/04/2025: 23.0°C - 31.5°C | Sol</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 03/04/2025: 24.6°C - 32.7°C | Possibilidade de chuva irregular</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/308.png' alt='icon' /> 04/04/2025: 23.0°C - 25.9°C | Chuva forte</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/302.png' alt='icon' /> 05/04/2025: 20.6°C - 22.7°C | Chuva moderada</p><p><img src='https://cdn.weatherapi.com/weather/64x64/day/176.png' alt='icon' /> 06/04/2025: 20.5°C - 23.4°C | Possibilidade de chuva irregular</p></div></div></body></html>
+    <div class="container">
+        <h1>Previsão do Tempo</h1>
+        <label for="cidade">Selecione uma cidade:</label>
+        <select id="cidade">
+            {% for cidade in cidades %}
+                <option value="{{ cidade }}">{{ cidade }}</option>
+            {% endfor %}
+        </select>
+        <button onclick="buscarPrevisao()">Ver previsão</button>
+
+        <div id="previsao" class="previsao"></div>
+    </div>
+
+    <script>
+        function buscarPrevisao() {
+            let cidade = document.getElementById("cidade").value;
+            let url = "/previsao?cidade=" + cidade;
+            
+            fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                let previsaoDiv = document.getElementById("previsao");
+                previsaoDiv.innerHTML = ""; 
+
+                if (data.erro) {
+                    previsaoDiv.innerHTML = "<p>Erro ao buscar previsão!</p>";
+                    return;
+                }
+
+                data.forEach(dia => {
+                    let diaDiv = document.createElement("div");
+                    diaDiv.className = "dia";
+                    diaDiv.innerHTML = `
+                        <p><strong>${dia.data}</strong></p>
+                        <p><img src="${dia.icon}" alt="icon"> ${dia.descricao}</p>
+                        <p>🌡️ Mín: ${dia.temp_min}°C | Máx: ${dia.temp_max}°C</p>
+                    `;
+                    previsaoDiv.appendChild(diaDiv);
+                });
+            })
+            .catch(error => console.error("Erro ao buscar a previsão:", error));
+        }
+    </script>
+
+</body>
+</html>
